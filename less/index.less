@@ -1,0 +1,25 @@
+@import "import/reset.less";
+@fs: 72rem;
+.fs(@px){
+    [data-dpr="1"] & {
+        font-size: @px/2;
+    }
+    [data-dpr="2"] & {
+        font-size: @px;
+    }
+    [data-dpr="3"] & {
+        font-size: 1.5 * @px;
+    }
+}
+.container {
+	width:600px;
+	height:400px;
+	background-color:red;
+    p:nth-child(1) {
+        .fs(30px);
+    }
+    p:nth-child(2) {
+        .fs(36px);
+    }
+}
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+    <meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/flexible.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="container">
+		<p>24</p>
+		<p>36</p>
+	</div>
+	<div class="container"></div>
+	<div class="bottom" style="height: 400px;margin-top: 10rem;"></div>
+</body>
+<script type="text/javascript">
+	$(function(){
+		var h = $('.bottom').offset().top;
+		var st = $(window).scrollTop();
+		console.log(h);
+	})
+</script>
+</html>
